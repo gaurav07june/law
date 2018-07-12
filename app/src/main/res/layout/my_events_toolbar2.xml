@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout>
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+
+        android:background="@color/colorWhite"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+     >
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/eventsFilterImportantCb"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:gravity="center_vertical"
+        android:text="Important"
+        android:drawablePadding="@dimen/_5sdp"
+        app:cbd_boxSize="@dimen/_15sdp"
+        app:cbd_cornerRadius="0dp"
+        app:cbd_strokeColor="@color/colorOrange"
+
+        android:textColor="@color/colorTxtGreyD2"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorTxtGrey"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approved"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:drawableRight="@drawable/dropdown_arrow"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textColor="@color/colorTxtGreyD2"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            />
+    </LinearLayout>
+</LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </layout>

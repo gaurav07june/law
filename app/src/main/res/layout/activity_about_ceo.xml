@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgGreyLightest"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ceo_new" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/NMGTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/ceoName"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                app:fontName="Roboto-Bold.ttf" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:text="@string/ceoOfMatterhorn"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="Roboto-Regular.ttf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_15sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/circle_grey"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/linkedin" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/circle_grey"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/ic_pdf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/circle_grey"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/ic_word" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/circle_grey"
+                    android:padding="@dimen/_15sdp"
+                    android:src="@drawable/ic_business_card" />
+
+            </LinearLayout>
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/_10sdp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/matterhornAboutCeo1"
+                android:textColor="@color/colorTxtGrey"
+                app:fontName="Museo_Slab_4.otf"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/education"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_18sdp"
+                    app:fontName="Museo_Slab_2.otf"
+                     />
+
+
+                <ImageView
+                    android:id="@+id/aboutCeoEducationIv"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="gone"
+                    android:src="@drawable/selector_expand_icon" />
+
+            </LinearLayout>
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/aboutCeoEducationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/abouCeoEducation1"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="Museo_Slab_4.otf"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/bgGreyLight" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/experience"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp"
+                    app:fontName="Museo_Slab_2.otf" />
+
+
+                <ImageView
+                    android:id="@+id/aboutCeoExperienceExpandIv"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/selector_expand_icon" />
+
+            </LinearLayout>
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/aboutCeoExperienceTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/aboutCeoExperience"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

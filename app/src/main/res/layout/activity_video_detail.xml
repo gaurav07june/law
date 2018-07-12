@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include android:id="@+id/video_detail_toolbar" layout="@layout/toolbar_gray" />
+
+    <FrameLayout
+        android:id="@+id/frmlay_video_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:transitionName="@string/transition_name"
+        android:background="@android:color/black">
+
+        <com.example.nmgvideoviewmodule.UniversalVideoView
+            android:id="@+id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="center"
+            app:uvv_autoRotation="true"
+            app:uvv_fitXY="false" />
+
+        <com.example.nmgvideoviewmodule.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:uvv_scalable="true" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrview_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bnt_start"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="start" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/_15sdp"
+                app:fontName="Museo_Slab_2.otf"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_upload_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_video_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/translucentW65"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/video_detail_img_user_image"
+                    android:layout_width="@dimen/_60sdp"
+                    android:src="@drawable/placeholder_rect"
+                    android:layout_height="@dimen/_60sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toRightOf="@+id/video_detail_img_user_image">
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:id="@+id/video_detail_txt_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fontName="Museo_Slab_4.otf"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                       />
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:id="@+id/video_detail_txt_count"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+</layout>

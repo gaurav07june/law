@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/relative_lay_home_video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lnrlay_legal_practice_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:id="@+id/rltlay_video1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/prac_video_1_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@color/cardview_dark_background"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_videos"/>
+
+            </RelativeLayout>
+
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_prac_video1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_below="@+id/rltlay_video1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+
+            >
+            <RelativeLayout
+                android:id="@+id/rltlay_video2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/prac_video_2_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@color/cardview_dark_background"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_videos"/>
+            </RelativeLayout>
+
+
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_prac_video2_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rltlay_video2"
+                android:maxLines="2"
+
+                android:textAlignment="center"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.matterhornlegal.customui.NMGButton
+        android:id="@+id/home_find_more_videos_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/orange_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:text="Find More Videos"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_18sdp"
+        app:fontName="Museo_Slab_2.otf"
+        android:layout_below="@+id/lnrlay_legal_practice_video"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+
+</layout>

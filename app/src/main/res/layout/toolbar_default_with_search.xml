@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+
+    android:background="@color/colorGrey"
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rltlay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/home_action_item_ripple"
+            android:clickable="true"
+            />
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="Museo_Slab_2.otf"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:visibility="visible"
+
+            />
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/toolbar_edt_search"
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_3sdp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:hint="@string/search_here"
+            app:fontName="Museo_Slab_2.otf"
+            android:textSize="@dimen/_16sdp"
+
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+
+            />
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search"
+            android:background="@drawable/home_action_item_ripple"
+            android:clickable="true"
+            />
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close_black_24dp"
+            android:background="@drawable/home_action_item_ripple"
+            android:clickable="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+</layout>

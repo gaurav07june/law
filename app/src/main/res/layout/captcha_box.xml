@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_90sdp"
+    android:background="@drawable/captcha_btn_bg"
+
+    >
+
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/captcha_cbox"
+            style="@style/Material.Drawable.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_90sdp"
+            android:checked="false"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="I'm not a robot"
+
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:textColor="@color/colorTxtGreyD"
+            android:textSize="@dimen/_14sdp"
+            app:cbd_boxSize="@dimen/_25sdp"
+            app:cbd_cornerRadius="@dimen/_2sdp"
+            app:cbd_strokeColor="@color/colorTxtGrey"
+            app:cbd_tickColor="@color/colorWhite"
+
+
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+
+        >
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_recaptcha"
+            android:layout_gravity="center_horizontal"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reCAPTCHA"
+                android:textSize="@dimen/_12sdp"
+
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy - Terms"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_10sdp"
+
+            />
+    </LinearLayout>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <FrameLayout
+        android:id="@+id/counter_days_t_lay"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_days_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/counter_days_o_lay"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_toRightOf="@id/counter_days_t_lay"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_days_o"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/counter_hours_t_lay"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_toRightOf="@id/counter_days_o_lay"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_hours_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/counter_hours_o_lay"
+
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_toRightOf="@id/counter_hours_t_lay"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_hours_o"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/counter_mins_t_lay"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_toRightOf="@id/counter_hours_o_lay"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_mins_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/counter_mins_o_lay"
+
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_toRightOf="@id/counter_mins_t_lay"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_mins_o"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/counter_secs_t_lay"
+
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_toRightOf="@id/counter_mins_o_lay"
+        android:background="@drawable/count_down_slot_bg"
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_secs_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/counter_secs_o_lay"
+
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_toRightOf="@id/counter_secs_t_lay"
+        android:background="@drawable/count_down_slot_bg"
+
+        android:elevation="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/counter_secs_o"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counter_days_t_lay"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Day"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/counter_hours_t_lay"
+        android:layout_below="@id/counter_hours_t_lay"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Hrs"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/counter_mins_o_lay"
+        android:layout_toStartOf="@+id/counter_mins_o_lay"
+        android:text="Min"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/counter_secs_t_lay"
+        android:layout_below="@id/counter_secs_t_lay"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Sec"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_8sdp"
+
+        android:textStyle="bold" />
+</RelativeLayout>

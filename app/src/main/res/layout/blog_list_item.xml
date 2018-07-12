@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+    <ImageView
+        android:id="@+id/blog_thumb"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/blog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorTxtGreyD"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:fontName="Museo_Slab_4.otf"
+            />
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/blog_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorTxtGrey"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:maxLines="2"
+            />
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/blog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorTxtGrey"
+            android:textSize="@dimen/_8sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_clock"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

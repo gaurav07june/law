@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.matterhornlegal.activities.ForgotPassActivity">
+
+    <include
+        android:id="@+id/toolbarSettings"
+        layout="@layout/toolbar_gray" />
+
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/settingsPushNotificationTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="@string/pushNotifications"
+        android:textColor="@color/colorTxtGreyD"
+        android:textSize="@dimen/_16sdp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorPrimaryHomeR" />
+
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/settingsResetPasswordTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="@string/resetPassword"
+        android:textColor="@color/colorTxtGreyD"
+        android:textSize="@dimen/_16sdp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorPrimaryHomeR"
+
+        />
+</LinearLayout>

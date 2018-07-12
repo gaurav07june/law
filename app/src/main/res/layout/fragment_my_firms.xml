@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/firms_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryHome"
+            android:elevation="@dimen/_5sdp"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/firms_toolbar"
+                layout="@layout/toolbar_default_with_no_search"
+
+                />
+
+            <include
+
+                android:id="@+id/firms_column_toggle_toolbar"
+                layout="@layout/toolbar_column_toggle_no_filter" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/firms_appbar">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/firms_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:clipToPadding="true"
+                android:padding="@dimen/_5sdp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_no_data_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/colorOrange"
+
+                android:visibility="gone"
+                app:fontName="Museo_Slab_4.otf"
+                android:text="@string/noDataFound"/>
+
+        </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/filter_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/firms_appbar"
+            android:visibility="gone"
+            android:clickable="true"
+            >
+
+            <include
+                android:id="@+id/firm_filter_layout"
+                layout="@layout/firm_filter_layout"
+                android:visibility="visible" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</layout>

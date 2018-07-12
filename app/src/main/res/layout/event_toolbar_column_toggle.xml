@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@color/colorColumnToggle"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            >
+<com.matterhornlegal.customui.NMGTextView
+    android:id="@+id/calendar_type_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_calendar_selector"
+    android:drawablePadding="@dimen/_10sdp"
+    android:text="Calendar"
+    android:textSize="@dimen/_16sdp"
+    android:textColor="@color/colorTxtGrey"
+    />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/border_grey_left_right"
+            >
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/list_type_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/list_icon_selector"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="List"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/colorTxtGrey"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/location_type_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/filter_icon_selector"
+                android:drawablePadding="@dimen/_10sdp"
+                android:text="Location"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/colorTxtGrey"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

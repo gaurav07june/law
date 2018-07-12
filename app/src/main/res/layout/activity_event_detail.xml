@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.matterhornlegal.activities.ForgotPassActivity">
+
+   <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar_gray" />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/blogBottomRl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_margin="@dimen/_10sdp">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/blogShareLl"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:src="@drawable/ic_share_full" />-->
+
+    <!--<com.matterhornlegal.customui.NMGTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/share"-->
+    <!--android:textColor="@color/colorTxtGrey"-->
+    <!--android:textSize="@dimen/_14sdp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_218sdp"
+                    android:background="@color/bgGreyLight"
+                    >
+
+                    <ImageView
+                        android:id="@+id/submitEventBannerIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:transitionName="@string/transition_name"
+                        android:src="@drawable/home_header1_bg" />
+                </RelativeLayout>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/submitEventLogoIv"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_white_grey_border"
+                    android:src="@drawable/home_header2_bg"
+                    app:civ_border_color="@color/colorGreyL1"
+                    app:civ_border_width="@dimen/_1sdp"
+
+                    />
+
+            </RelativeLayout>
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_event_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                app:fontName="Museo_Slab_2.otf"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/linkblued_circle"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/linkedin" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/twiblued_circle"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/twitter" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/fbblued_circle"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/gplusredd_circle"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/ic_youtube" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/bgGreyLightest" />
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/description"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_4.otf" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_event_detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:fontName="Roboto-Regular.ttf"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_event_detail_date_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:drawableLeft="@drawable/cal_time"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="@string/event_date_range"
+                app:fontName="Roboto-Regular.ttf"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/bgGreyLightest" />
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/additionalInformation"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_4.otf" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_event_detail_add_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:fontName="Roboto-Regular.ttf"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/bgGreyLightest" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/category"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_4.otf" />
+
+            <!--<com.matterhornlegal.customui.NMGTextView
+                style="@style/tagStyle"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/domesticViolence" />-->
+            <LinearLayout
+                android:id="@+id/lnrlay_category_area"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        style="@style/tagStyle"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="@string/arbitration" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        style="@style/tagStyle"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="@string/bankingFinance" />
+                    <com.matterhornlegal.customui.NMGTextView
+                        style="@style/tagStyle"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="@string/bankingFinance" />
+
+
+                </LinearLayout>-->
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/bgGreyLightest" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="@string/contactInfo"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_4.otf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/circle_grey"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_address" />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_event_detail_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+
+                    android:textColor="@color/colorTxtGrey"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/circle_grey"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_web" />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_event_detail_web_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+
+                    android:textColor="@color/colorTxtGrey"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <com.matterhornlegal.customui.NMGButton
+                android:id="@+id/eventDetailRegisterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/orange_btn_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/registerNow"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_2.otf" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_share_event"
+                        android:layout_width="@dimen/_33sdp"
+                        android:layout_height="@dimen/_33sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/circle_grey_light"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_share_active" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/share"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrlay_event_important"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_33sdp"
+                        android:layout_height="@dimen/_33sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/circle_grey_light"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_mark_important_active" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/markImportant"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_to_calendar_lay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_add_event_to_cal"
+                        android:layout_width="@dimen/_33sdp"
+                        android:layout_height="@dimen/_33sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/circle_grey_light"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_add_cal_active" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/addTiCalendar"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrlay_edit_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_edit_event"
+                        android:layout_width="@dimen/_33sdp"
+                        android:layout_height="@dimen/_33sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/circle_grey_light"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_edit_active" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrlay_delete_event"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_delete_event"
+                        android:layout_width="@dimen/_33sdp"
+                        android:layout_height="@dimen/_33sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/circle_grey_light"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_delete_active" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delete"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+</layout>

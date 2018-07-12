@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_10sdp"
+    android:background="@drawable/firm_item_bg"
+    android:layout_margin="@dimen/_5sdp"
+    >
+    <ImageView
+        android:id="@+id/firm_thumb"
+        android:transitionName="@string/transition_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:scaleType="centerCrop"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    android:background="@color/colorColumnToggle"
+    >
+
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/firm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/colorTxtGreyD"
+        android:textSize="@dimen/_16sdp"
+        app:fontName="Museo_Slab_4.otf"
+        android:maxLines="1"
+        />
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/firm_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Los Angeles, USA"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textColor="@color/colorTxtGrey"
+        android:textSize="@dimen/_10sdp"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <com.matterhornlegal.customui.NMGTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practice Areas"
+            android:textColor="@color/colorTxtGreyD"
+            android:textSize="@dimen/_10sdp"
+            app:fontName="Museo_Slab_4.otf"
+
+            android:maxLines="2"
+            />
+        <LinearLayout
+            android:id="@+id/lnrlay_practice_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"
+            >
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/firm_prac_areas"
+             style="@style/tagStyle"
+
+                android:text="Arbitration"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/tag_bg"
+
+                />
+
+            <TextView
+                android:id="@+id/firm_more_prac_areas"
+
+                style="@style/tagStyle"
+                android:text="2+"
+
+                android:layout_marginLeft="@dimen/_5sdp"
+                />
+        </LinearLayout>
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/txt_no_practice_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorTxtGrey"
+            android:textSize="@dimen/_8sdp"
+            android:text="@string/no_practice_area"/>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

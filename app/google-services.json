@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "229242356314",
+    "project_id": "firebase-matterhornlaw"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229242356314:android:fd3a461bf5f0fd0c",
+        "android_client_info": {
+          "package_name": "com.matterhornlegal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229242356314-2irvtfgs183b7ifdfrl9pj5c9vtro8f1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matterhornlegal",
+            "certificate_hash": "1980e48228acb2670e6803dcc646f0a2e0c5bd74"
+          }
+        },
+        {
+          "client_id": "229242356314-evthnpiv617pj468i20hfdekil8t7fl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnzUyJCMkY2kOqGAnQe_9KZLvrhvfM-cA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

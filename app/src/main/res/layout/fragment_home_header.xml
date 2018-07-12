@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.matterhornlegal.fragments.HomeHeaderFragment"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/home_header_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_header1_bg"
+        />
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/home_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        app:fontName="Museo_Slab_2.otf"
+        android:text="@string/home_header_1"
+        android:textStyle="bold"
+
+        />
+
+</FrameLayout>

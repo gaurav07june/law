@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/splashBottomRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/splashLoginTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gplusred_btn_bg"
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:text="@string/log_in"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_2.otf" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/splashSignupTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_toRightOf="@id/splashLoginTv"
+                android:background="@drawable/grey_btn_bg"
+                android:paddingBottom="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:text="@string/sign_up"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                app:fontName="Museo_Slab_2.otf" />
+
+        </LinearLayout>
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/splashSkipTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/grey_border_btn_bg"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/skipForNow"
+            android:textAlignment="center"
+            android:textColor="@color/colorTxtGreyD"
+            android:textSize="@dimen/_14sdp"
+            app:fontName="Museo_Slab_4.otf" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/splashBottomRl"
+        android:background="@drawable/loading_screen_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.matterhornlegal.customui.CloudAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.matterhornlegal.customui.CloudAnimationView>
+
+        <ImageView
+            android:id="@+id/splashLogoIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/matterhorn_law_logo"
+            android:layout_marginTop="@dimen/_45sdp"
+            />
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/matterhornLawTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splashLogoIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/matterhornLaw"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_26sdp"
+            app:fontName="Museo_Slab_2.otf"
+            />
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/matterhornLawThinkTankTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/matterhornLawTv"
+            android:layout_alignRight="@id/matterhornLawTv"
+            android:layout_below="@id/matterhornLawTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:gravity="center"
+            android:text="@string/globalLegalThinkTank"
+            android:textColor="@color/colorGreyL"
+            android:textSize="@dimen/_18sdp"
+            app:fontName="Roboto-Bold.ttf"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

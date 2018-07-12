@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="com.matterhornlegal.utils.FlingBehavior"
+
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="?actionBarSize"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+                <ImageView
+                    android:id="@+id/home_header_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_header1_bg" />
+
+                <com.matterhornlegal.customui.HomeHeaderPager
+                    android:id="@+id/home_header_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@id/home_header_bg"
+                    android:layout_alignBottom="@id/home_header_bg"
+                    />
+                <com.matterhornlegal.customui.CircleIndicator
+                    android:id="@+id/home_header_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignBottom="@id/home_header_pager"
+                    app:ci_animator="@anim/scale_with_alpha"
+                    app:ci_drawable="@drawable/circle_indicator_selected_bg"
+                    app:ci_drawable_unselected="@drawable/circle_indicator_unselected_bg"
+                    app:ci_height="@dimen/_6sdp"
+                    app:ci_width="@dimen/_6sdp" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/home_layout_toolbar"
+                layout="@layout/toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_35sdp"
+            android:paddingTop="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:visibility="gone"
+                >
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/live_stream_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Livestreamed Events"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_22sdp"
+                    app:fontName="Museo_Slab_2.otf" />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="The best platform for capturing your live legal practices\nevents."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTxtGrey"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.matterhornlegal.customui.LiveStreamItemView
+                    android:id="@+id/live_stream_item_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_no_livestream_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/colorOrange"
+                    app:fontName="Museo_Slab_4.otf"
+                    android:visibility="gone"
+                    android:text="@string/noDataFound"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHomeDusty"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_25sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_25sdp"
+                app:fontName="Museo_Slab_2.otf">
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/legal_practice_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Legal Practice Videos"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_22sdp"
+                    app:fontName="Museo_Slab_2.otf" />
+
+                <include
+
+                    android:id="@+id/home_live_prac_videos"
+                    layout="@layout/home_live_prac_videos_view"
+
+
+                    />
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_no_video_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/colorOrange"
+                    app:fontName="Museo_Slab_4.otf"
+                    android:visibility="gone"
+                    android:text="@string/noDataFound"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_25sdp"
+                android:paddingLeft="@dimen/_15sdp"
+
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_25sdp">
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/recent_blog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Blog"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_22sdp"
+                    app:fontName="Museo_Slab_2.otf" />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="The best platform for capturing your live legal practices\nevents."
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTxtGrey"
+                    android:textSize="@dimen/_10sdp" />
+
+                <include
+                    android:id="@+id/home_blog"
+                    layout="@layout/home_blog_view"
+
+                    />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_no_blog_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/noDataFound"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/_16sdp"
+                    app:fontName="Museo_Slab_4.otf"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorHomeDusty"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_25sdp"
+                android:paddingLeft="@dimen/_15sdp"
+
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_25sdp">
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/featured_law_firms_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Featured Law Firms"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_22sdp"
+                    app:fontName="Museo_Slab_2.otf" />
+
+                <include
+                    android:id="@+id/featured_law_firms"
+                    layout="@layout/featured_law_firms_view"
+                    />
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_no_firm_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/colorOrange"
+                    app:fontName="Museo_Slab_4.otf"
+                    android:visibility="gone"
+                    android:text="@string/noDataFound"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+    <!--demo color for circular progress bar-->
+    <color name="colorYellow">#FFE6C10B</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="colorGrey">#474960</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorRed">#FFD71608</color>
+    <color name="colorOrange">#F56445</color>
+    <color name="colorGreen">#00a860</color>
+    <array name="myColors">
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+    </array>
+
+</resources>

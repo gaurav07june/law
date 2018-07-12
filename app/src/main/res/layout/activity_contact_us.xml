@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+
+    tools:context="com.matterhornlegal.activities.ContactUsActivity">
+
+  <include
+      layout="@layout/toolbar_gray"
+      android:id="@+id/toolbarContactUs"
+
+      />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contactUsAddressInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle"
+        >
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/contactUsAddressEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:text="@string/addressValue"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+             />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contactUsContactNumberInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle"
+        >
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/contactUsContactNumberEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contactNumber"
+            android:text="@string/contactNumberValue"
+            android:drawableRight="@drawable/phone"
+            android:editable="false"
+            android:paddingRight="@dimen/_10sdp"
+            android:singleLine="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/contactUsEmailInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/inputLayoutStyle"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle"
+        >
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/contactUsEmailEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:text="@string/emailValue"
+            android:editable="false"
+            android:drawableRight="@drawable/email"
+            android:paddingRight="@dimen/_10sdp"
+            android:singleLine="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/contactUsMapImage"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <com.matterhornlegal.customui.NMGButton
+        android:id="@+id/contactUsSendMessageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:textAllCaps="true"
+        android:text="@string/sendMessage"
+        android:background="@color/colorOrange"
+        android:layout_gravity="bottom"
+        app:fontName="Museo_Slab_2.otf"
+        />
+
+</LinearLayout>

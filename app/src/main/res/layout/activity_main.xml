@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".products.ProductDetailActivity">
+
+    <data>
+
+
+    </data>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/colorOrange"
+    >
+        <ImageView
+            android:id="@+id/demo_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_350sdp"
+    android:layout_alignParentBottom="true"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        />
+<com.matterhornlegal.customui.AppDemoViewPager
+    android:id="@+id/app_demo_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/_15sdp"
+    android:paddingRight="@dimen/_15sdp"
+    android:clipToPadding="false"
+
+    >
+
+</com.matterhornlegal.customui.AppDemoViewPager>
+</RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/login_btns"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            >
+            <com.matterhornlegal.customui.NMGButton
+                android:id="@+id/log_in_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/orange_btn_bg"
+                android:text="Log In"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:textSize="@dimen/_18sdp"
+                android:gravity="center"
+                android:textAllCaps="true"
+
+                />
+            <com.matterhornlegal.customui.NMGButton
+                android:id="@+id/sign_up_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_btn_bg"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:textSize="@dimen/_18sdp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                />
+
+        </LinearLayout>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/demo_screen_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_above="@id/login_btns"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:ci_animator="@anim/scale_with_alpha"
+            app:ci_drawable="@drawable/circle_indicator_selected_bg"
+            app:ci_drawable_unselected="@drawable/circle_indicator_unselected_bg"
+            app:ci_height="@dimen/_8sdp"
+            app:ci_width="@dimen/_8sdp" />
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/demo_skip_btn_bg"
+            android:text="Skip"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            />
+</RelativeLayout>
+</layout>

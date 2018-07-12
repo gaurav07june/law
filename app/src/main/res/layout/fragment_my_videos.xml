@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fitsSystemWindows="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/videos_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryHome"
+            android:elevation="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/videos_toolbar"
+                layout="@layout/toolbar_default_with_no_search"
+
+                />
+
+            <include
+
+                android:id="@+id/videos_column_toggle_toolbar"
+                layout="@layout/toolbar_column_toggle_no_filter" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_below="@id/videos_appbar">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/videos_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:clipToPadding="true"
+                android:layoutAnimation="@anim/layout_animation_fall_down"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_no_data_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/colorOrange"
+                app:fontName="Museo_Slab_4.otf"
+                android:visibility="gone"
+                android:text="@string/noDataFound"/>
+
+        </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/filter_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/videos_appbar"
+            android:clickable="true"
+            android:visibility="gone"
+            >
+
+            <include
+                android:id="@+id/video_filter_layout"
+                layout="@layout/video_filter_layout"
+                android:visibility="visible" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</layout>

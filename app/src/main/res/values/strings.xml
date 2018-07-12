@@ -1,0 +1,387 @@
+<resources>
+    <string name="app_name">MatterHornLaw</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_demo_1_title">Submit Law Firms</string>
+    <string name="app_demo_1_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="app_demo_2_title">Upload Videos</string>
+    <string name="app_demo_2_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+
+    <string name="forgot_pass_desc">Enter the email address you used when you joined
+        and\nwe\'ll send you instructions to reset your password.\n\nFor security reasons, we do NOT strore password.\n
+        So rest assued that we will never send you password\nvia email.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="back_to_login"><u>Back to Login</u></string>
+    <string name="home_header_1">Providing a Calendar of Key Global Legal Practice Events</string>
+    <string name="home_header_2">The Global Legal Practice Think <Tank></Tank></string>
+    <string name="home_header_3">Providing Practical Advice on Global Legal Practice Management</string>
+
+
+    <string name="connectWithSocialMedia">Connect with Social Media</string>
+    <string name="forgotPassword"><u>Forgot Password?</u></string>
+
+    <string name="latLongContactUs">40.7838063,-77.9268232</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="address">Address</string>
+    <string name="contactNumber">Contact Number</string>
+    <string name="email">Email</string>
+    <string name="addressValue">Matterhorn Law, 5th Floor, 1177 Avenue of the Americas, New York City, 10036, United States</string>
+    <string name="contactNumberValue">+1 (859) 987-5697</string>
+    <string name="emailValue">info@matterhornlaw.com</string>
+    <string name="sendMessage">Send Message</string>
+    <string name="matterhornLaw">Matterhorn Law</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last name</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="phoneNum">Phone Number</string>
+    <string name="country">Country</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="sendNow">Send Now</string>
+
+    <string name="editProfile">Edit Profile</string>
+    <string name="occupation">Occupation</string>
+    <string name="interestedAreas">Interested Areas</string>
+    <string name="optional">Optional</string>
+    <string name="save">Save</string>
+
+    <string name="pushNotifications">Push Notifications</string>
+    <string name="newVideoUplaod">New Video Upload</string>
+    <string name="newEventAdded">New Event Added/updated</string>
+    <string name="upcomingEvent">Upcoming Event</string>
+    <string name="videoApprovalRejection">Video Approval/Rejection Notification</string>
+    <string name="newContentAdded">New Content Added by Admin</string>
+
+    <string name="settings">Settings</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="currentPasword">Current Password</string>
+    <string name="newPasword">New Password</string>
+    <string name="confirmPasword">Confirm Password</string>
+
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="termsConditions">Terms and Conditions</string>
+
+    <string name="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="loremIpsum1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, wh</string>
+    <string name="video_gallery">Video Gallery</string>
+    <string name="my_video_gallery">My Video Gallery</string>
+    <string name="submitEvent">Submit Event</string>
+    <string name="eventTitle">Event Title</string>
+    <string name="description">Description</string>
+    <string name="additionalInformation">Additional Information</string>
+    <string name="category">Category</string>
+    <string name="venueTBA">Venue to be announced</string>
+    <string name="venueLocation">Venue/Location</string>
+    <string name="website">Website</string>
+    <string name="registrationUrl">Registration URL</string>
+    <string name="uploadLogo">Upload Logo</string>
+    <string name="continue_reading">Continue reading</string>
+    <string name="upload_event_logo">Upload Event Logo</string>
+    <string name="uploadEventBanner">Upload Event Banner</string>
+    <string name="uploadEventDocument">Upload Event Document</string>
+    <string name="dateTBA">Date to be announced</string>
+    <string name="startDate">Start Date</string>
+    <string name="startTime">Start Time</string>
+    <string name="endDate">End Date</string>
+    <string name="endTime">End Time</string>
+    <string name="byPostingEventAgreeTnC">By posting your event, you agree to our Terms of Use</string>
+    <string name="submitNow">Submit Now</string>
+    <string name="updateNow">Update Now</string>
+    <string name="update_event">Update Event</string>
+    <string name="files">Files</string>
+
+
+    <string name="submitLawFirm">Submit Law Firm</string>
+    <string name="lawFirmName">Law Firm Name</string>
+    <string name="firmDescription">Firm Description</string>
+    <string name="practiceAreas">Practice Areas</string>
+    <string name="industrySectors">Industry Sectors</string>
+    <string name="language">Languages</string>
+    <string name="selectCountry">Select Country</string>
+    <string name="lawFirmContactNum">Law Firm - Contact Number</string>
+    <string name="lawFirmWebsite"> Law Firm - Website</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="twitter_url">Twitter url</string>
+    <string name="how_did_you_hear_about_us">How did you hear about us?</string>
+    <string name="matterhorn_term_condition">By clicking \"Sign up\" you indicate that you have read and agree with our Terms of use and Privacy Policy.</string>
+    <string name="socialMediaLinks">Social Media Links</string>
+    <string name="addMore">Add More</string>
+    <string name="enterYourSocialUrl">Enter your %s profile URL</string>
+    <string name="linkedIn">LinkedIn</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="googlePlus">Google+</string>
+    <string name="howDidYouHearAboutUs">How did you hear about us?</string>
+    <string name="byPostingFirmAgreeTnC">By posting your Firm, you agree to our Terms of use.</string>
+    <string name="submit">Submit</string>
+    <string name="search_here">Search here...</string>
+    <string name="submitVideo">Submit Video</string>
+    <string name="videoTitle">Video Title</string>
+    <string name="videoDesc">Video Description</string>
+    <string name="uploadAVideo">Upload a Video</string>
+    <string name="byVideoUploadAgreeTerms">By video upload, you agree to our Terms &amp; Privacy Policy.</string>
+    <string name="uploadNow">Upload Now</string>
+
+    <string name="yourVideoUploadedSuccessfully">Your Video is uploaded successully for approval. We will send you confirmation email after approval.</string>
+    <string name="uploadAnotherVideo">Upload another Video</string>
+    <string name="google_maps_key">AIzaSyDG__0s_zt19ZCxhPj_dohDjk6dL1tBvao</string>
+
+    <string name="introduction">Introduction</string>
+    <string name="continueReading">Continue Reading</string>
+    <string name="view_less">View Less</string>
+    <string name="contactInfo">Contact Info</string>
+    <string name="registerNow">Register Now</string>
+    <string name="share">Share</string>
+    <string name="markImportant">Mark Important</string>
+    <string name="addTiCalendar">Add to Calendar</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="blog">Blog</string>
+
+    <string name="skipForNow">Skip for now</string>
+    <string name="globalLegalThinkTank">Global Legal Practice Think-Tank</string>
+
+    <string name="aboutUs">About Us</string>
+    <string name="theGlobalLegalThinkTank">The Global Legal Practice Think Tank</string>
+    <string name="matterhornAbout1">Matterhorn Law is a research organization-  a global leagl practice think tank - dedicated to promoting the efficient practice of Law. </string>
+    <string name="matterhornAbout2">Its scholars and researchers maintain this web based legal practice resource platform and understake research on significant legal practice issues with
+        global application. As a result of its activities, Matterhorn Law provides practical advice on legal practice management for both in-house lega departments and law firms.</string>
+    <string name="matterhornAbout3">Ongoing Research Initiatives</string>
+    <string name="matterhornAbout4">The goal of Matterhorn Law is to promote efficieny in legal practice management. Such managemnet is often problematic. The issue that may arise
+    in connection with the management of a legal practice are potentially infinite. \n\n\nThe first research initiative for the scholars
+    and researchers at Matterhorn Law is in respect of the appropriate parameters for the organization of an in-house legal department.
+    The second initiative is in respect of the determination of teh appropriate parameters for a law firm to take a decision to open an office
+    outside of its home jurisdiction.</string>
+    <string name="matterhornAbout5">The issues with respect to an in-house legal department may include the following:</string>
+    <string name="matterhornAbout6">The issues with respect to a law firm with global aspirations may include the following:</string>
+    <string name="matterhornAbout7">All contributors from the Matterhorn Law community of users in respect of these initiatives are welcome.</string>
+
+    <string name="matterHornAboutInHouse">
+
+        \u25CF How should an in-house legal department be organized for a company with global reach?
+         \n\n\u25CF Should a legal department with global reach be centralized or decentralized?
+         \n\n\u25CF What practice areas should be developed in-house?
+        \n\n\u25CF What matters can be handled in-house?
+         \n\n\u25CF If not, how should a law firm be chosen? For example, with respect to dispute resolution, are certain law firms better at certain types of disputes, e.g., construction disputes.
+         \n\n\u25CF Should a law firm panel be organized and maintained?
+         \n\n\u25CF What fee arrangements are appropriate for law firms? Should a success fee be considered in whole or in part?
+         \n\n\u25CF How should a dispute with respect to the fees of a law firm be resolved?
+
+
+    </string>
+
+    <string name="matterHornAboutLegal">
+        \u25CF When should a law firm contemplate the opening of an office outside of its home jurisdiction?
+         \n\n\u25CF The international office should develop which practice areas?
+         \n\n\u25CF The international office should develop expertise in respect of which industry sectors?
+
+    </string>
+
+
+    <string name="matterhornAboutDummyText">\u25CF Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    \n\n\u25CF Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    \n\n\u25CF It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    \n\n\u25CF It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    \n\n\u25CF Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    \n\n\u25CF Sed consectetur sed sem et condimentum. Nulla nulla eros, eleifend ac nibh quis, dapibus posuere massa. Aliquam dapibus pellentesque neque ut dignissim.
+</string>
+
+
+    <string name="aboutCeo">About CEO</string>
+    <string name="ceoName">Joseph Huse</string>
+    <string name="ceoOfMatterhorn">CEO of Matterhorn Law</string>
+    <string name="matterhornAboutCeo1">Joseph has been engaged in the practice of law for approximately 37 years.
+    \n\nHe has lived and practiced in New York(Paul, Weiss, Rifkind, Wharton &amp; Garrison), Peurto Rico(McConnell valdes),
+    London(FreshFields Bruckhaus Deringer), Paris (Paul, Weiss, Rifkind, Wharton &amp; Garrison and subsequently FreshFields Bruckhaus Deringer),
+    Dubai (FreshFields Bruckhaus Deringer), Abu Dhabi (FreshFields Bruckhaus Deringer), Qatar (Newton Legal), Behrain (FreshFields Bruckhaus Deringer and subsequently Newton Legal),
+        , South Korea (Lee &amp; Ko), Taiwan (Formosa Transational) and Tokyo(Matsuo &amp; Kosugi).
+        \n\nJoseph was a member of the Freshfields’ Project Finance and International Arbitration Groups for 20 years.
+\n\nHe is the author of the book “Understanding and Negotiating EPC and Turnkey Contracts” published by Sweet &amp; Maxwell.
+\n\nHe frequently sits as arbitrator. Joseph was until recently a member of the LCIA Court as the special delegate for the DIFC-LCIA Arbitration Centre. He was the first Registrar of the DIFC-LCIA Arbitration Centre.
+\n\nSince leaving Freshfields, Joseph has founded and developed one of the most successful regional law firms in the Middle East: Newton Legal.
+\n\nIn addition, Joseph frequently provides advice regarding the management of global law firms and the organization (and reorganization) of in-house legal departments.
+    </string>
+
+    <string name="education">Education</string>
+    <string name="experience">Law Firm &amp; Related Experience</string>
+
+    <string name="abouCeoEducation1">\u25CF JD/MBA: Boston College
+    \n\u25CF Masters in Business and Tax Law: University of Paris I(Pantheon-Sorbonne)</string>
+
+    <string name="aboutCeoExperience">\u25CF McConnell Valdes (1980 to 1983)
+        \n\u25CF Law Offices of S.G. Archibald (1983 to 1989 and including three secondments referred to below)
+        \n\u25CF Paul, Weiss, Rifkind, Wharton &amp; Garrison (1989-1992)
+    \n\u25CF Freshfields Bruckhaus Deringer: (1992-2012) – MENA Regional Managing Partner
+    \n\u25CF Newton Legal (2012 to present)
+    \n\u25CF Newton Consult (2016 to present)</string>
+
+
+    <string name="daysAgo">2 days ago</string>
+
+    <string name="vikan">Vikan</string>
+    <string name="banking">Banking</string>
+    <string name="bankingFinance">Banking &amp; finance</string>
+    <string name="arbitration">Arbitration</string>
+    <string name="finance">Finance</string>
+    <string name="financialInstitutes">Financial Institutes</string>
+    <string name="infrastructure">Infrastructure</string>
+    <string name="realEstate">Real Estate</string>
+    <string name="lawFirmAddressValue">60 State Street Boston, Massachusetts 02109</string>
+    <string name="lawFirmPhoneValue">+1 617 526 6000</string>
+    <string name="lawFirmEmailValue">info@wilmerhale.com</string>
+    <string name="lawFirmWebsiteValue">www.wilmerhale.com</string>
+    <string name="lawFirmLatLongValue">42.3590,71.0565</string>
+
+    <string name="eventTitleValue">The London Law Expo- Europe\'s largest confrence &amp; exhibition</string>
+    <string name="eventTimeValue">Nov 5, 2017(10:30 AM) - Nov 5, 2017 (6:30 PM)</string>
+    <string name="domesticViolence">Domestic Violence</string>
+
+    <string name="blogTitleValue">Business Law Laminated Reference Guide</string>
+    <string name="blogDateValue">September 24, 2017 </string>
+    <string name="blogs">Blogs</string>
+
+    <string name="oldest_first">Oldest First</string>
+    <string name="newest_first">Newest First</string>
+    <string name="live_stream_events">LiveStream Events</string>
+    <string name="next_event">Next Event</string>
+    <string name="upcoming_events">Upcoming Events</string>
+
+    <string name="events">Events</string>
+    <string name="my_events">My Events</string>
+    <string name="pleaseWait">Please wait</string>
+    <string name="errorInternet">Please check your internet connection.</string>
+    <string name="errorNetworkIssue">Network Issue</string>
+    <string name="errorParsing">Parsing Issue</string>
+    <string name="errorTimeOut">Time out issue</string>
+    <string name="errorGeneric">There was some error. Please try again later.</string>
+    <string name="noDataFound">No data found</string>
+
+    <string-array name="occupations">
+        <item>Occupation1</item>
+        <item>Occupation2</item>
+        <item>Occupation3</item>
+        <item>Occupation4</item>
+
+    </string-array>
+
+    <string-array name="interested_areas">
+        <item>Interest1</item>
+        <item>Interest2</item>
+        <item>Interest3</item>
+        <item>Interest4</item>
+    </string-array>
+    <string name="username_email_emptty_error">Please fill user name or email address.</string>
+    <string name="first_name_empty_error">Please fill first name</string>
+    <string name="last_name_empty_error">Please fill last name</string>
+    <string name="email_address_empty_error">Please fill email address</string>
+    <string name="address_empty_error">Please fill address.</string>
+    <string name="email_address_valid_error">Please fill valid email address</string>
+    <string name="password_empty_error">Please fill password.</string>
+    <string name="empty_field_error">Please fill this field.</string>
+    <string name="current_password_empty_error">Please fill current password.</string>
+    <string name="correct_password_error">Please enter correct password.</string>
+    <string name="new_password_empty_error">Please enter new password.</string>
+    <string name="phone_empty_error">Please fill phone number.</string>
+    <string name="valid_phone_error">Please fill valid phone number.</string>
+    <string name="occupation_empty_error">Please fill occupation.</string>
+    <string name="interested_area_empty_error">Please fill interested area.</string>
+    <string name="confirm_password_empty_error">Please fill confirm password</string>
+    <string name="password_mismatch_error">Password mismatch.</string>
+    <string name="term_condition_check_error">Please check terms and conditions.</string>
+    <string name="captcha_error">Please verify you are not a robot</string>
+    <string name="user_name_empty_error">Please select a user name.</string>
+    <string name="search_text_empty_error">Please enter text to search.</string>
+    <string name="app_uri_host">10.0.0.24</string>
+    <string name="reset_pass_path_pattern">/matterhorn/api/users/reset</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">Login</string>
+    <string name="gallery">Gallery</string>
+    <string name="pick_image_from">Pick image from</string>
+    <string name="no_practice_area">No practice area defined</string>
+    <string name="transition_name">matterhorn_transition</string>
+    <string name="guest_user_alert">Please login first to access this functionality.</string>
+
+
+    <!--Camera Strings-->
+    <string name="mcam_defaultDuration">00:00</string>
+    <string name="mcam_permissions_needed">Permissions Needed</string>
+    <string name="mcam_video_perm_warning">Permission to access your microphone and camera is needed, the camera will now close.</string>
+    <string name="mcam_retry">Retake</string>
+    <string name="mcam_use_video">USE VIDEO</string>
+    <string name="mcam_use_stillshot">USE Photo</string>
+    <string name="mcam_portrait">Portrait</string>
+    <string name="mcam_portrait_warning">It\'s recommended that you record in landscape. Record in portrait?</string>
+    <string name="mcam_yes">Yes</string>
+    <string name="mcam_error">Error</string>
+    <string name="mcam_video_capture_unsupported">Your device does not support video capture.</string>
+    <string name="mcam_no_audio_access">You haven\'t given access to your microphone; no audio will be recorded.</string>
+    <string name="mcam_file_size_limit_reached">You\'ve reached the maximum file size!</string>
+    <string name="mcam_image_preview_error_title">Image preview error</string>
+    <string name="mcam_image_preview_error_message">Could not decode bitmap</string>
+    <string name="mcam_use_photo">Use</string>
+    <string name="mcam_retake_photo">Retake</string>
+    <string name="mcam_discard_photo">Discard</string>
+    <!--Camera Strings End-->
+    <string name="event_date_range">%1$s - %2$s</string>
+    <string name="stop_uploading">Stop uploading.</string>
+    <string name="welcome_guest">Welcome Guest</string>
+
+    <string name="video_title_error">Please enter video title.</string>
+    <string name="video_description_error">Please enter video description</string>
+    <string name="video_url_error">Please select a video to upload.</string>
+    <string name="practice_area_error">Please select a practice area.</string>
+    <string name="industry_sector_error">Please select a industry sector.</string>
+    <string name="country_error">Please select a country.</string>
+
+    <string name="password_validation_msg">Password must be alphanumeric and must contain at least one special character, at least one lower case, at least one uppercase character. Password should be 6 to 12 character long. Password must start with alphabet.</string>
+
+    <string name="jan">JAN</string>
+    <string name="feb">FEB</string>
+    <string name="mar">MAR</string>
+    <string name="apr">APR</string>
+    <string name="may">MAY</string>
+    <string name="jun">JUN</string>
+    <string name="jul">JUL</string>
+    <string name="aug">AUG</string>
+    <string name="sep">SEP</string>
+    <string name="oct">OCT</string>
+    <string name="nov">NOV</string>
+    <string name="dec">DEC</string>
+
+    <string name="jan_full">JANUARY</string>
+    <string name="feb_full">FEBRUARY</string>
+    <string name="mar_full">MARCH</string>
+    <string name="apr_full">APRIL</string>
+    <string name="may_full">MAY</string>
+    <string name="jun_full">JUNE</string>
+    <string name="jul_full">JULY</string>
+    <string name="aug_full">AUGUST</string>
+    <string name="sep_full">SEPTEMBER</string>
+    <string name="oct_full">OCTOBER</string>
+    <string name="nov_full">NOVEMBER</string>
+    <string name="dec_full">DECEMBER</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="event_added_successfully">Event has been added to your Calendar</string>
+    <string name="calendar_write_permission_required">Permission required in order to Add Events to Calendar</string>
+    <string name="social_login_failed">Failed to login, Please try again later</string>
+
+    <string name="camera_image_capture_permission_required">Permission required in order to use camera.</string>
+    <string name="gallery_permission_required">Permission required in order to use image gallery.</string>
+    <string name="Phone_call_permission_required">Permission required in order to make a call.</string>
+
+    <string name="upload_video_notification_title">Matterhorn Legal video upload.</string>
+    <string name="upload_video_notification_message">Uploading your video to matterhorn legal server.</string>
+    <string name="uploadin_your_video">Uploading your video.</string>
+    <string name="error_uploading_video">Some error has occurred in uploading the video</string>
+    <string name="upload_success">Video is uploaded successfully.</string>
+    <string name="video_created_on_vimeo">Video is created on vimeo.</string>
+    <string name="upload_video_ticker_msg"></string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

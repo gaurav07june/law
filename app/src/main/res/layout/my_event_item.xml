@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_75sdp">
+
+        <ImageView
+            android:id="@+id/my_event_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:transitionName="@string/transition_name"
+            android:scaleType="centerCrop" />
+
+        <!--<TextView
+            android:id="@+id/is_important_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/thumb_important_bg"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/_8sdp"
+            android:text="Important"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="@dimen/_8sdp" />-->
+
+       <!-- <ImageView
+            android:id="@+id/is_approved_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/event_approved_selector" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/my_event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Lorem ipsum dolor sit amet amet"
+            android:textColor="@color/colorTxtGreyD"
+            android:textSize="@dimen/_14sdp"
+            app:fontName="Museo_Slab_4.otf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/my_event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_cal_time"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/event_date_range"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</layout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/video_thumb"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:transitionName="@string/transition_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_rect"
+            />
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_videos"/>
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    >
+
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet amet"
+        android:textColor="@color/colorTxtGreyD"
+        android:textSize="@dimen/_14sdp"
+        app:fontName="Museo_Slab_4.otf"
+        android:maxLines="2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/colorWhite"
+            android:src="@drawable/ic_app_logo"
+            />
+
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matterhorn Law"
+            android:textColor="@color/colorTxtGrey"
+            android:textSize="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            />
+
+</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</layout>

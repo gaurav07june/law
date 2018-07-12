@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp">
+
+        <ImageView
+            android:id="@+id/img_event_desc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/placeholder_rect"
+            android:transitionName="@string/transition_name"
+           android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_below="@+id/img_event_desc"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            >
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_event_title"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                app:fontName="Museo_Slab_2.otf"
+                android:textColor="@color/colorTxtGreyD2"
+                android:text="The London Law Expo"/>
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/txt_event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_cal_time"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/event_date_range"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_12sdp" />
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/txt_event_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Los Angeles, Calefornia USA"
+                android:textColor="@color/colorTxtGrey"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <com.matterhornlegal.customui.NMGButton
+            android:id="@+id/btn_read_more"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorWhite"
+            app:fontName="Museo_Slab_2.otf"
+            android:background="@drawable/orange_btn_bg_flat"
+            android:text="Read more"/>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <declare-styleable name="NMGTextView">
+
+        <attr name="fontName" format="string" />
+
+    </declare-styleable>
+    <declare-styleable name="EmptyTextState">
+        <attr name="state_empty_text" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatioImageView">
+        <attr name="groupId" format="string" />
+        <attr name="adjustWidth" format="boolean"/>
+    </declare-styleable>
+</resources>

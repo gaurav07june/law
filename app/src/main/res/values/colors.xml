@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F56445</color>
+    <color name="colorPrimaryDark">#db4828</color>
+    <color name="colorPrimaryHome">#474960</color>
+    <color name="colorPrimaryHomeR">#7c7f92</color>
+    <color name="colorPrimaryHomeDark">#2a2b39</color>
+    <color name="colorPrimaryHomeDarkAct">#F56445</color>
+    <color name="colorPrimaryDarkG">#e5e5e5</color>
+    <color name="colorAccent">#f7846c</color>
+    <color name="colorOrange">#F56445</color>
+    <color name="colorOrange4D">#4DF56445</color>
+    <color name="colorGrey">#474960</color>
+    <color name="colorFBBlue">#3C57A4</color>
+    <color name="colorFBBlueD">#304583</color>
+    <color name="colorFBBlueR">#8a9ac8</color>
+    <color name="colorTwiBlue">#07A7F1</color>
+    <color name="colorTwiBlueD">#0585c0</color>
+    <color name="colorTwiBlueR">#005271</color>
+    <color name="colorLinkBlue">#0679B8</color>
+    <color name="colorLinkBlueD">#046093</color>
+    <color name="colorLinkBlueR">#69aed4</color>
+    <color name="colorGPlusRed">#DC513C</color>
+    <color name="colorGPlusRedD">#b04030</color>
+    <color name="colorGPlusRedR">#ea968a</color>
+
+
+
+    <color name="translucentW20">#33ffffff</color>
+    <color name="translucentW30">#4Dffffff</color>
+    <color name="translucentW65">#a6ffffff</color>
+    <color name="colorTxtGrey">#8F8F9B</color>
+    <color name="colorTxtGreyT80">#CC8F8F9B</color>
+    <color name="colorTxtGreyD">#6A687D</color>
+    <color name="colorTxtGreyD2">#474960</color>
+
+    <color name="colorGreyL">#c7c8cf</color>
+    <color name="colorGreyL1">#e4e4e4</color>
+    <color name="colorGreyL2">#fafafa</color>
+    <color name="colorGreyL3">#F1F1F3</color>
+    <color name="colorRippleOrange">#FFAB91</color>
+    <color name="colorRippleGrey">#E0E0E0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteT80">#CCffffff</color>
+    <color name="colorWhiteLine">#33ffffff</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorGreen">#00a860</color>
+
+    <color name="colorFeaturedLawThumb">#E9E9E9</color>
+    <color name="colorHomeDusty">#F4F4F6</color>
+    <color name="colorColumnToggle">#ececef</color>
+    <color name="bgGreyLight">#e3e3e3</color>
+    <color name="bgGreyLightest">#ececef</color>
+    <color name="mcam_color_light">#FAFAFA</color>
+    <color name="mcam_color_dark">#424242</color>
+    <color name="beautify_brown_dark">#b1944f</color>
+    <color name="mcam_use_photo_btn_color">#3F51B5</color>
+    <color name="mcam_retake_photo_btn_color">#FF4081</color>
+    <color name="mcam_use_photo_txt_color">#ffffff</color>
+    <color name="mcam_retake_photo_txt_color">#ffffff</color>
+
+
+    <!--demo color for circular progress bar-->
+    <color name="colorYellow">#FFE6C10B</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorRed">#FFD71608</color>
+    <array name="myColors">
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+        <item>@color/colorGrey</item>
+    </array>
+</resources>

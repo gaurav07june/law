@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_add_event_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <View
+        android:id="@+id/dummy_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/submit_video_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:elevation="@dimen/_2sdp"
+            >
+            <ImageView
+                android:id="@+id/submit_video_img"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:adjustViewBounds="true"
+                android:tint="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/homecolored_circle"
+                android:src="@drawable/submit_video_ic"
+                android:scaleType="center"
+                />
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="Submit Video"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                app:fontName="Museo_Slab_2.otf" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/submit_event_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            >
+            <ImageView
+                android:id="@+id/submit_event_img"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:adjustViewBounds="true"
+                android:tint="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/homecolored_circle"
+                android:src="@drawable/submit_event_ic"
+                android:scaleType="center"
+                />
+            <com.matterhornlegal.customui.NMGTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:text="Submit Event"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                app:fontName="Museo_Slab_2.otf"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/submit_firm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/orange_btn_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            >
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:text="Submit Law Firm"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                app:fontName="Museo_Slab_2.otf"
+                />
+            <ImageView
+                android:id="@+id/submit_firm_img"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_35sdp"
+                android:adjustViewBounds="true"
+                android:tint="@color/colorWhite"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/homecolored_circle"
+                android:src="@drawable/submit_law_firm_ic"
+                android:scaleType="center"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

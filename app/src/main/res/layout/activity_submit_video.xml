@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lnrlay_upload_video_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        >
+        <include layout="@layout/toolbar_gray" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/submitVideoTitleEt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/videoTitle"
+                        android:imeOptions="actionNext"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/submitVideoDescriptionEt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/videoDesc"
+                        android:imeOptions="actionNext"
+                        android:singleLine="false"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/submitVideoPracticeAreasEt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="@string/practiceAreas"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="true"
+                        android:imeOptions="actionNext"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:id="@+id/upload_video_spinner_practice_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/submitVideoIndustrySectorsEt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="@string/industrySectors"
+                        android:imeOptions="actionNext"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:id="@+id/video_upload_spinner_industry_sector"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/submitVideoCountryEt"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="true"
+                        android:hint="@string/selectCountry"
+                        android:imeOptions="actionNext"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+                <Spinner
+                    android:id="@+id/video_upload_spinner_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <!--Media files-->
+
+                <com.matterhornlegal.customui.NMGButton
+                    android:id="@+id/submitVideoUploadVideoBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/grey_border_btn_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/uploadAVideo"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_16sdp"
+                    app:fontName="Museo_Slab_4.otf"/>
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_video_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:visibility="gone"/>
+
+
+                <com.rey.material.widget.CheckBox
+                    android:id="@+id/submitVideoTermsCheckBox"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:checked="true"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_10sdp"
+                    app:cbd_boxSize="@dimen/_15sdp"
+                    app:cbd_cornerRadius="0dp"
+                    app:cbd_strokeColor="@color/colorOrange" />
+
+
+                <com.matterhornlegal.customui.NMGButton
+                    android:id="@+id/submitVideoSubmitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/orange_btn_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/uploadNow"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_16sdp"
+                    app:fontName="Museo_Slab_2.otf"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnrlay_video_upload_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/_20sdp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/matterhorn_law_logo"/>
+        <com.matterhornlegal.customui.NMGTextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_18sdp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorTxtGreyD2"
+            android:layout_height="wrap_content"
+            android:text="your video is uploaded successfully for approval. We send confirmation mail"/>
+
+        <com.matterhornlegal.customui.NMGButton
+            android:id="@+id/btn_upload_another_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:text="Uload another video"
+            android:background="@drawable/orange_btn_bg"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</layout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/action_livestream_events"
+        android:icon="@drawable/ic_menu_live"
+        android:title="Livestream Events"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/action_blog_news_events"
+
+        android:title="Blog/News"
+        android:icon="@drawable/ic_menu_blog"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_my_videos"
+            android:icon="@drawable/ic_menu_videos"
+            android:title="My Videos"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_my_events"
+
+            android:title="My Events"
+            android:icon="@drawable/ic_menu_cal"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_my_law_firms"
+
+            android:checkable="true"
+            android:icon="@drawable/ic_menu_law_firm"
+            android:title="My Law Firms" />
+
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_videos"
+            android:icon="@drawable/ic_menu_videos"
+            android:title="Videos"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+
+       <!-- <item
+            android:id="@+id/action_events"
+            android:icon="@drawable/ic_menu_cal"
+            android:title="Events"
+            app:showAsAction="never"
+            android:checkable="true"
+            />-->
+
+        <item
+            android:id="@+id/action_calender"
+
+            android:title="Calendar"
+            android:icon="@drawable/ic_menu_cal"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/action_law_firms"
+
+            android:title="Law Firms"
+            android:icon="@drawable/ic_menu_videos"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_share"
+            android:icon="@drawable/ic_menu_share_app"
+            android:title="Share the App"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_contact_us"
+
+            android:title="Contact Us"
+            android:icon="@drawable/ic_menu_contact"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/action_log_out"
+            android:title="Log out"
+            android:icon="@drawable/ic_menu_contact"
+            app:showAsAction="never"
+            android:checkable="true"
+            />
+
+    </group>
+</menu>

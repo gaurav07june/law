@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_gray" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:id="@+id/submitLawFirmUploadLogoRl"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_white_grey_border"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/cameraIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="false"
+                        android:src="@drawable/ic_camera" />
+
+                    <com.matterhornlegal.customui.NMGTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cameraIv"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_3sdp"
+                        android:clickable="false"
+                        android:text="@string/uploadLogo"
+                        android:textColor="@color/colorTxtGrey"
+                        android:textSize="@dimen/_9sdp" />
+
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/submitLawFirmLogoIv"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    app:civ_border_color="@color/colorGreyL1"
+                    app:civ_border_width="@dimen/_1sdp"
+
+                    />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmTitleEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lawFirmName"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmWEmailEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/emailAddress"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmDescriptionEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/firmDescription"
+                    android:imeOptions="actionNext"
+                    android:singleLine="false"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmPracticeAreasEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/dropdown_arrow"
+                    android:hint="@string/practiceAreas"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<Spinner-->
+                <!--android:id="@+id/measureSpinnerPracticeArea"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginLeft="@dimen/_10sdp"-->
+                <!--android:layout_marginRight="@dimen/_10sdp"></Spinner>-->
+
+            <com.thomashaertel.widget.MultiSpinner
+                android:id="@+id/measureSpinnerPracticeArea"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmIndustrySectorsEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/dropdown_arrow"
+                    android:hint="@string/industrySectors"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+            <!--<Spinner-->
+                <!--android:id="@+id/measureSpinnerIndustrySector"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginLeft="@dimen/_10sdp"-->
+                <!--android:layout_marginRight="@dimen/_10sdp"></Spinner>-->
+
+            <com.thomashaertel.widget.MultiSpinner
+                android:id="@+id/measureSpinnerIndustrySector"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmCountryEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/dropdown_arrow"
+                    android:hint="@string/selectCountry"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+            <!--<Spinner
+                android:id="@+id/measureSpinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>-->
+            <com.thomashaertel.widget.MultiSpinner
+                android:id="@+id/measureSpinnerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmLanguageEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/dropdown_arrow"
+                    android:hint="@string/language"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+            <com.thomashaertel.widget.MultiSpinner
+                android:id="@+id/measureSpinnerLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmAddressEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:imeOptions="actionNext"
+                    android:singleLine="false"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmContactNumberEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lawFirmContactNum"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmWebsiteEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/lawFirmWebsite"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmLinkedinEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/linkedIn"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmTwitterEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/twitter_url"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/edt_submit_firm_how_hear_about_us"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/dropdown_arrow"
+                    android:hint="@string/how_did_you_hear_about_us"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+            <Spinner
+                android:id="@+id/spinner_how_hear_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>-->
+
+
+            <!--Social media-->
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/inputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/submitLawFirmHearAboutUsEt"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/dropdown_arrow"
+                    android:hint="@string/howDidYouHearAboutUs"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/measureSpinnerHearAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/submitLawFirmTermsCheckBox"
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:text="@string/byPostingFirmAgreeTnC"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_10sdp"
+                app:cbd_boxSize="@dimen/_15sdp"
+                android:textStyle="italic"
+                app:cbd_cornerRadius="0dp"
+                app:cbd_strokeColor="@color/colorOrange" />
+
+
+
+
+
+            <com.matterhornlegal.customui.NMGButton
+                android:id="@+id/submitLawFirmSubmitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/orange_btn_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                app:fontName="Museo_Slab_2.otf"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

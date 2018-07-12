@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?selectableItemBackground"
+    tools:ignore="UnusedAttribute">
+
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/stillshot_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/controlsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|bottom"
+            tools:ignore="UselessParent"
+            android:weightSum="2"
+            >
+
+            <com.shitisha.customviews.NMGButton
+
+                android:id="@+id/confirm"
+                style="?borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:background="@color/mcam_use_photo_btn_color"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitXY"
+                android:text="@string/mcam_use_photo"
+                android:textColor="@color/mcam_use_photo_txt_color"
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                />
+
+            <com.shitisha.customviews.NMGButton
+                android:id="@+id/retry"
+                style="?borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|end"
+                android:background="@color/mcam_retake_photo_btn_color"
+                android:scaleType="fitXY"
+                android:text="@string/mcam_retake_photo"
+                android:textColor="@color/mcam_retake_photo_txt_color"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:tint="@android:color/white"
+        android:src="@drawable/ic_close_black_24dp"
+        style="?android:attr/borderlessButtonStyle"
+
+        />
+</RelativeLayout>

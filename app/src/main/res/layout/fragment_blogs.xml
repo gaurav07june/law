@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/blogs_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryHome"
+            android:elevation="@dimen/_5sdp"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/blog_list_toolbar"
+                layout="@layout/toolbar_default_with_sort"
+
+                />
+
+        </LinearLayout>
+
+        <com.matterhornlegal.customui.NMGRecyclerView
+            android:id="@+id/blogs_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/blogs_appbar"
+            android:background="@color/colorWhite"
+            android:clipToPadding="false"
+            android:layout_margin="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            />
+
+        <FrameLayout
+            android:id="@+id/filter_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/blogs_appbar"
+            android:visibility="gone"
+            >
+
+            <include
+                android:id="@+id/blog_filter_layout"
+                layout="@layout/blog_filter_layout"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/load_more_progress_view"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressStyle="@style/AppCircularProgressViewStyle"
+            app:pv_progressMode="indeterminate"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:visibility="gone"
+
+
+            />
+<FrameLayout
+    android:id="@+id/blog_list_progress_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:visibility="gone"
+    >
+        <com.rey.material.widget.ProgressView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressStyle="@style/AppCircularProgressViewStyle"
+            app:pv_progressMode="indeterminate"
+            android:layout_gravity="center"
+
+
+            />
+</FrameLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_about_app"
+        android:title="About MatterHorn Law"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/action_about_ceo"
+
+        android:title="About CEO"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/action_t_and_c"
+
+        android:title="Terms and Conditions"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+    <item
+        android:id="@+id/action_privacy_info"
+
+        android:title="Privacy Information"
+        app:showAsAction="never"
+        android:checkable="true"
+        />
+</menu>

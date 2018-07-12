@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matterhornlegal.activities.SignUpActivity"
+    >
+    <RelativeLayout
+        android:id="@+id/sign_up_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+        <LinearLayout
+            android:id="@+id/sign_up_skip_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp">
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border_btn_bg"
+                android:onClick="onSkipClicked"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Skip"
+                android:textAlignment="center"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="Museo_Slab_4.otf" />
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for now register later"
+                android:textAlignment="center"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="Roboto-Bold.ttf"
+                android:paddingLeft="@dimen/_8sdp"
+                />
+        </LinearLayout>
+        <com.matterhornlegal.customui.NMGTextView
+            android:id="@+id/sign_up_header"
+            android:layout_below="@+id/sign_up_skip_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_34sdp"
+            app:fontName="Museo_Slab_2.otf"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            />
+        <!--<RelativeLayout
+            android:id="@+id/sign_up_user_image"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_75sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sign_up_header"
+            android:layout_marginTop="@dimen/_25sdp"
+            >
+        <de.hdodenhof.circleimageview.CircleRectView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@color/colorGreyL1"
+            android:src="@mipmap/ic_launcher"
+
+            />
+        <ImageButton
+            android:id="@+id/sign_up_img_add"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/orange_circle_btn_bg"
+            android:src="@drawable/ic_add"
+            android:scaleType="center"
+            android:tint="@color/colorWhite"
+            android:layout_margin="@dimen/_1sdp"
+            />
+        </RelativeLayout>-->
+        <LinearLayout
+
+            android:id="@+id/sign_up_input_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/sign_up_header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_up_first_name_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/white_bg_bottom_border_light"
+                app:hintTextAppearance="@style/TextInputLabelStyle">
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/sign_up_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:hint="First Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/sign_up_last_name_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/white_bg_bottom_border_light"
+                app:hintTextAppearance="@style/TextInputLabelStyle">
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/sign_up_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:hint="Last Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/sign_up_email_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/white_bg_bottom_border_light"
+                app:hintTextAppearance="@style/TextInputLabelStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/sign_up_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:hint="Email Address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/sign_up_user_name_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/white_bg_bottom_border_light"
+                app:hintTextAppearance="@style/TextInputLabelStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/sign_up_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:hint="User name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_up_pass_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorGrey"
+                android:background="@drawable/white_bg_bottom_border_light"
+                app:hintTextAppearance="@style/TextInputLabelStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/sign_up_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:hint="Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sign_up_cpass_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorGrey"
+                android:background="@drawable/white_bg_bottom_border_light"
+                app:hintTextAppearance="@style/TextInputLabelStyle">
+
+
+                <com.matterhornlegal.customui.NMGEditText
+                    android:id="@+id/sign_up_cpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:hint="Confirm Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_14sdp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.matterhornlegal.customui.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/optional"
+                    android:textColor="@color/colorTxtGrey"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:translationZ="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sign_up_occupation_lay"
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/edt_occupation"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="@string/occupation"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="true"
+                        android:imeOptions="actionNext"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <Spinner
+                android:id="@+id/signup_spinner_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.matterhornlegal.customui.NMGTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/optional"
+                    android:textColor="@color/colorTxtGrey"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:translationZ="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_14sdp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/sign_up_int_area_lay"
+                    style="@style/inputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+                    <com.matterhornlegal.customui.NMGEditText
+                        android:id="@+id/edt_interested_areas"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="@string/interestedAreas"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="true"
+                        android:imeOptions="actionNext"
+                        android:textCursorDrawable="@null" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <Spinner
+                android:id="@+id/signup_spinner_interested_area"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <com.rey.material.widget.CheckBox
+                    android:id="@+id/sign_up_accept_terms_cbox"
+                    style="@style/Material.Drawable.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:checked="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:text="I agree to Matterhorn Law,"
+                    android:textColor="@color/colorTxtGreyD"
+                    android:textSize="@dimen/_10sdp"
+                    app:cbd_boxSize="@dimen/_15sdp"
+                    app:cbd_cornerRadius="0dp"
+                    app:cbd_strokeColor="@color/colorOrange" />
+                <com.matterhornlegal.customui.NMGTextView
+                    android:id="@+id/txt_term_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/sign_up_accept_terms_cbox"
+                    android:text="terms and conditions"/>
+
+            </RelativeLayout>-->
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/sign_up_accept_terms_cbox"
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:checked="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:text="@string/matterhorn_term_condition"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="italic"
+                app:cbd_boxSize="@dimen/_15sdp"
+                app:cbd_cornerRadius="0dp"
+                app:cbd_strokeColor="@color/colorOrange" />
+
+
+
+            <include
+                android:id="@+id/signup_captcha_lay"
+                layout="@layout/captcha_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/captcha_btn_bg" />
+        </LinearLayout>
+        <com.matterhornlegal.customui.NMGButton
+            android:id="@+id/sign_up_create_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/orange_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:text="Create Account"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18sdp"
+            app:fontName="Museo_Slab_2.otf"
+            android:layout_below="@id/sign_up_input_lay"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/colorGreyL3"
+            android:padding="@dimen/_15sdp"
+            android:layout_below="@id/sign_up_create_btn"
+            >
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Already have an account?"
+                android:textColor="@color/colorTxtGreyD"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="Roboto-Bold.ttf" />
+
+            <com.matterhornlegal.customui.NMGTextView
+                android:id="@+id/txt_sign_up_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/login_type_email_btn_bg"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="Login"
+                android:onClick="onLoginClicked"
+                android:textSize="@dimen/_14sdp"
+                app:fontName="Museo_Slab_2.otf" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+</layout>

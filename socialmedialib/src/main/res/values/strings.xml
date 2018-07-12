@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SocialLoginLib</string>
+    <!--Facebook Meta-->
+    <string name="facebook_app_id">1698988043510811</string>
+    <string name="fb_login_protocol_scheme">fb1698988043510811</string>
+    <string name="facebook_authorities">com.facebook.app.FacebookContentProvider1698988043510811</string>
+
+    <!--Twitter Meta-->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">v1SikThYa977d8vbWWuefTu0s</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">k1PmBfvIpAFGNuBVsW7N9Q9uT8abNPh4EwpkH9aCnyNdesIaHM</string>
+</resources>

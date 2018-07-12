@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/_5sdp"
+
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/bottom_action_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryHome"
+            android:gravity="bottom"
+            android:drawableTop="@drawable/ic_home_selector"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:onClick="onHomeClicked"
+            />
+        <TextView
+            android:id="@+id/bottom_action_videos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Videos"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryHome"
+            android:gravity="bottom"
+            android:drawableTop="@drawable/ic_videos_selector"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:onClick="onVideosClicked"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_add_bold"
+                android:scaleType="center"
+                android:background="@drawable/orange_circle"
+                android:onClick="onAddClicked"
+                />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/bottom_action_livestream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Livestream"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryHome"
+            android:gravity="bottom"
+            android:drawableTop="@drawable/ic_livestream_selector"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:onClick="onLiveStreamClicked"
+            />
+        <TextView
+            android:id="@+id/bottom_action_calendar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Calander"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryHome"
+            android:gravity="bottom"
+            android:drawableTop="@drawable/ic_calendar_selector"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:onClick="onCalendarClicked"
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+</layout>

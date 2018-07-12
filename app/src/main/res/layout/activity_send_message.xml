@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.matterhornlegal.activities.SendMessageActivity">
+
+    <ImageView
+        android:id="@+id/sendMessageCrossIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/close_icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+    <com.matterhornlegal.customui.NMGTextView
+        android:id="@+id/login_type_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/sendMessage"
+        android:textAlignment="center"
+        android:textColor="@color/colorTxtGreyD"
+        android:textSize="@dimen/_20sdp"
+        app:fontName="Museo_Slab_2.otf" />
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessageFirstNameEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstName"
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessageLastNameEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastName"
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessageEmailEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessagePhoneEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phoneNum"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessageCountryEt"
+            style="@style/editTextStyle"
+            android:drawableRight="@drawable/dropdown_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/country"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="true"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:id="@+id/send_message_spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"/>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessageSubjectEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/inputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLabelGreyStyle">
+
+
+        <com.matterhornlegal.customui.NMGEditText
+            android:id="@+id/sendMessageContentEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLines="5"
+            android:textCursorDrawable="@null" />
+    </android.support.design.widget.TextInputLayout>
+
+    <include
+        android:id="@+id/sendMessageCaptchaLayout"
+        layout="@layout/captcha_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/captcha_btn_bg" />
+
+    <com.matterhornlegal.customui.NMGButton
+        android:id="@+id/sendMessageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/orange_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/sendMessage"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:fontName="Museo_Slab_2.otf" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+</layout>
